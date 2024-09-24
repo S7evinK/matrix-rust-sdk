@@ -28,7 +28,7 @@
 //! this file is the secret storage key.
 //!
 //! You should configure your client to bootstrap cross-signing automatically
-//! and may chose to let your client automatically create a backup, if it
+//! and may choose to let your client automatically create a backup, if it
 //! doesn't exist, as well:
 //!
 //! ```no_run
@@ -575,7 +575,7 @@ impl Recovery {
 
     async fn update_recovery_state_no_fail(&self) {
         if let Err(e) = self.update_recovery_state().await {
-            error!("Coulnd't update the recovery state: {e:?}");
+            error!("Couldn't update the recovery state: {e:?}");
         }
     }
 
