@@ -307,7 +307,7 @@ pub(super) async fn send_request(
             name.push('_');
         }
     } else {
-        name = if name.find("pos").is_some() {
+        name = if name.find("pos").is_some() || name.find("since").is_some() {
             "incremental sync".to_string()
         } else {
             "initial sync".to_string()
